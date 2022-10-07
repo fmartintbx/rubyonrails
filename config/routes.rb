@@ -1,9 +1,11 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
   root 'dashboard#index'
-  resources:products do
+  resources :products do
     member do
-      get:new_movement
-      post:create_movement
+      get :new_movement
+      post :create_movement
     end
   end
 end
