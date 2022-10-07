@@ -10,6 +10,7 @@ Bundler.require(*Rails.groups)
 
 module BodegaRails
   class Application < Rails::Application
+    config.application_name = 'Bodega Rails | create by Focundo Corv.'
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 7.0
 
